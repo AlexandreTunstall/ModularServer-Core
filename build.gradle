@@ -1,0 +1,13 @@
+apply plugin: 'atunstall.server.gradleplugin'
+
+component {
+    id = 'atunstall.server.core'
+    name = 'Core'
+    ap = true
+}
+
+jar {
+    manifest {
+        attributes('Main-Class': 'atunstall.server.core.impl.Start')
+    }
+}
